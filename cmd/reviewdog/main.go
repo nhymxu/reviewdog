@@ -310,6 +310,8 @@ github-pr-check reporter as a fallback.
 		if err != nil {
 			return err
 		}
+
+		// TODO: if not error, resolve all comment open by this bot
 	case "gitlab-mr-commit":
 		build, cli, err := gitlabBuildWithClient()
 		if err != nil {
